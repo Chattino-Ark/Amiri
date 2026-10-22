@@ -1,0 +1,152 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COLORES Y FONDO DE LA PÁGINA */
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif; /* Línea actualizada */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 16px;
+
+  background: linear-gradient(
+    135deg,
+    #ff4d4d,
+    #ff0000,
+    #cc0000,
+    #660000
+  );
+
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 25px 16px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+  width: 100%;
+  max-width: 440px;
+  text-align: center;
+}
+
+/* FOTO DE PERFIL */
+.perfil {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 3px solid #ffffff;
+  background: #35445c;
+
+  margin-bottom: 18px;
+}
+
+/* NOMBRE */
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  overflow-wrap: anywhere;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* DESCRIPCIÓN */
+.descripcion {
+  color: #cbd5e1;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+/* LISTA DE REDES */
+.redes {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* BOTONES DE REDES SOCIALES */
+.enlace {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 58px;
+  padding: 15px 20px;
+
+  background: #ffffff;
+  color: #172033;
+
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+
+  border-radius: 14px;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+/* EFECTO AL PASAR EL CURSOR */
+.enlace:hover {
+  background: #dbeafe;
+  transform: translateY(-3px);
+}
+
+/* INDICADOR DEL ENLACE */
+.enlace span {
+  font-size: 20px;
+}
+
+/* ACCESIBILIDAD DEL TECLADO */
+.enlace:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 4px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  margin-top: 28px;
+  color: #aebbd0;
+  font-size: 13px;
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+@media (max-width: 480px) {
+  body {
+    padding: 24px 18px;
+  }
+
+  .perfil {
+    width: 90px;
+    height: 90px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .descripcion {
+    font-size: 14px;
+  }
+
+  .enlace {
+    min-height: 56px;
+    font-size: 16px;
+  }
+}
